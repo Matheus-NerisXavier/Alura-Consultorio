@@ -1,0 +1,40 @@
+@import url('styles/header.css');
+@import url('styles/divisao.css');
+@import url('styles/agendamento.css');
+
+:root {
+  --gradient-first: #f9f5ff;
+  --gradient-second: #EFF0F4;
+  --preto-claro: #464646;
+  --cinza-claro: #A3A3A3;
+  --cinza-medio: #F6F6F6;
+  --branco: #FFFFFF;
+  --laranja: #FFB050;
+  --geso-claro: #ECECEC;
+  --azul: #4894FF;
+  --fonte-principal: 'Montserrat';
+}
+
+body {
+  background: linear-gradient(90deg, var(--gradient-first) 0%, var(--gradient-second) 100%);
+  font-size: 14px;
+  font-weight: 400;
+  font-family: var(--fonte-principal);
+}
+
+.container {
+  max-width: 328px;
+  margin: 0 auto;
+}
+
+@media screen and (min-width: 768px) {
+ .container{
+   margin: 0;
+ }
+}
+
+@media screen and (min-width: 1470px) {
+  .container{
+    max-width: 1440px;
+  }
+ }

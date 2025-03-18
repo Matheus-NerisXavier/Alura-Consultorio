@@ -1,0 +1,123 @@
+.card {
+  background-color: var(--branco);
+  border-radius: 8px;
+  margin: 16px auto;
+}
+
+.agendamento__avatar {
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  margin: 20.5px 16px 16.5px;
+}
+
+.agendamento__info, .agendamento__perfil-usuario {
+  display: flex;
+}
+
+.agendamento__info {
+  flex-direction: column;
+  margin: 18px 0 12px;
+}
+
+.icon {
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  background-color: var(--cinza-medio);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 16px 16px 21px 91px ;
+}
+
+.card__localizacao-imagem {
+  margin-right: 8px;
+}
+
+.card__localizacao {
+  font-size: 12px;
+  color: var(--cinza-claro);
+  display: flex;
+  width: 127px;
+}
+
+.card__nome {
+  font-weight: 700;
+  color: var(--preto-claro);
+  margin-bottom: 5px;
+}
+
+.agendamento__horario {
+  font-size: 12px;
+  font-weight: 500;
+  margin: 9px 0px 8px 16px;
+  color: var(----preto-claro);
+}
+
+.agendamento__botao-video {
+  width: 139px;
+  height: 48px;
+  border: none;
+  border-radius: 8px;
+  background-color: var(--laranja);
+  color: var(--branco);
+  font-weight: 500;
+  padding: 13px 16px;
+  margin: 0 18px 16px 16px;
+}
+
+.agendamento__botao-audio {
+  width: 139px;
+  height: 48px;
+  border: none;
+  border-radius: 8px;
+  font-weight: 500;
+  background-color: var(--geso-claro);
+  color: var(--preto-claro);
+  padding: 13px 16px;
+}
+
+.agendamento__botao-endereco {
+  background-color: var(--azul);
+  border: none;
+  color: var(--branco);
+  border-radius: 8px;
+  width: 296px;
+  height: 48px;
+  margin: 8px 16px 16px;
+}
+
+@media screen and (min-width: 768px) {
+  .card {
+    max-width: 328px;
+  }
+
+  .card-1, .card-2, .card-3 {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    column-gap: 40px;
+  }
+
+  .agendamento {
+    max-width: 768px;
+    padding: 0 36px;
+    margin: 0 auto;
+  }
+
+}
+
+  @media screen and (min-width: 1470px) {
+    .agendamento {
+      max-width: 1000px;
+      padding: 0 36px;
+      margin: 0 auto;
+    }
+
+    .card-1, .card-2, .card-3 {
+      display: grid;
+      grid-template-columns: 1fr 1fr 1fr; 
+    }
+
+}
+
